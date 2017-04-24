@@ -2,50 +2,37 @@ Recursion
 
 In your own words, what is recursion? 
 -Recursion is any function that calls itself within the function definition.
+
 Why is it necessary to have a base case?
 -The base case breaks the chain of recursion, so it's sometimes also called the "terminating case".
-
 
 
 Graphs
 
 What is a graph?
+-An abstract data type consisting of nodes that can be directed or undirected. It's meant to implement the undirected graph and directed graph concepts from mathematics.
+
 How is a graph different from a tree?
+-They can contain loops (cycles)
+
 Give an example of something that would be good to model with a graph.
+-Disease progression in a particular organism
+
+
+
 Performance of Different Data Structures
 
 Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning/bottom. There are X’s in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a stack, or pop from the end of a queue). We’ve provided the first few answers for you.
 
-Fill in the runtimes for the following actions for the table below:
+****REFER TO ATTACHED PNG FILE******
 
-Data Structure  Index   Search  Add-R   Add-L   Pop-L   Pop-R
-Python List (Array) O(1)    O(n)    O(1)             
-Linked List                      
-Doubly-Linked List                       
-Queue (as Array)    X   X       X       X
-Queue (as LL or DLL)    X   X       X       X
-Stack (as Array, LL, or DLL)    X   X       X   X    
-Deque (as DLL)  X   X                
-Index: Find an item in the structure when you know its position
-Search: Find an item in the structure when you know its data
-Add(R/L): Set a key in set/dictionary or add node to tree
-Pop(R/L): Remove a key or node
-Fill in Runtime and Memory:
 
-The answers for dictionary have been provided; you should fill in the rest:
 
-Data Structure  Get Add Delete  Iterate Memory
-Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)    medium
-Set (Hash Map)                   
-Binary Search Tree                   
-Tree                     
-Get: Find an item in the structure
-Add: Set a key in set/dictionary or add node to tree
-Delete: Remove a key or node
-Iterate: Find next item in data structure
-Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
-Sorting
+Describe in words how the Bubble Sort algorithm works. 
+-Each bubble is compared to the one next to it, and each pair is subsequently sorted. The algorithm traverses the sequence a maximum of "N" times, at which point it's guarenteed that the highest "bubbles" will have "bubbled" to the top.
 
-Describe in words how the Bubble Sort algorithm works.
 Describe in words how the Merge Sort algorithm works.
+-Breaks down all lists to be sorted into many lists containing only 1 element. All lists are then recombined, sorting upon re-integration, until there is only 1 sorted list.
+
 Describe in words how the Quick Sort algorithm works.
+-Picks a middle "pivot" from which elements of the array are divided based on how they compare to the pivot value, forming two lists of "greater than pivot" and "less than pivot" values. The steps above are then repeated until the sub lists can be sorted.
