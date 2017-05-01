@@ -98,9 +98,14 @@ def num_nodes(tree):
     #     for child in children:
     #         return 1 + num_nodes(child)
     # print tree.data
-    # for item in tree.children:
+    # if not tree.children:
+    #     return 1
+    count = 1
+    for kid in tree.children:
+        count += num_nodes(kid)
     #     print item.data
     # return 1 + num_nodes(tree.children)
+    return count
 
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
